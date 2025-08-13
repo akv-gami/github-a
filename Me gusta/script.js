@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let currentLikes = parseInt(likeCountElement.innerText);
             currentLikes++;
             
-            likeCountElement.innerText = `${currentLikes} like(s)`;
+            likeCountElement.innerText = `${currentLikes} Me gusta`;
         });
     });
 });
