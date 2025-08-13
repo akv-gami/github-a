@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: white;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-decoration: underline wavy;
+      margin-bottom: 30px;
+    }
+
+    .box-container {
+      padding: 20px;
+    }
+
+    .box {
+      display: inline-block;
+      width: 250px;
+      height: 120px;
+      padding: 20px;
+      margin: 0 15px;
+      color: white;
+      border-radius: 5px;
+      vertical-align: top;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .lightseagreen {
+      background-color: lightseagreen;
+    }
+
+    .fuchsia {
+      background-color: fuchsia;
+    }
+
+    .navy {
+      background-color: navy;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model</h1>
+
+  <div class="box-container">
+    <span class="box lightseagreen">
+      ¡Hola! Soy el primer span de color light sea green.
+    </span>
+    <span class="box fuchsia">
+      ¡Hola! Soy el segundo span fucsia.
+    </span>
+    <span class="box navy">
+      ¡Hola! Soy el tercer span azul marino.
+    </span>
+  </div>
+</body>
+</html>

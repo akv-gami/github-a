@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #01383f;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background-color: #00bcd4;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.logout-btn:hover {
+    background-color: #0097a7;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 32px auto;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #01383f;
+    height: 100px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    background-color: white;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.card-body h4 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.edit-link {
+    font-size: 14px;
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.education-card h3 {
+    margin-bottom: 12px;
+}
+
+.connection-requests ul,
+.connections ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.connection-requests li,
+.connections li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+.connection-requests img,
+.connections img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.accept,
+.decline {
+    border: 2px solid #ff69b4;
+    background-color: white;
+    color: #ff69b4;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.accept:hover {
+    background-color: #33f062;
+}
+.decline:hover {
+    background-color: #f70505;
+    color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}

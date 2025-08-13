@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.card-header {
+    background-color: #01383f;
+    height: 180px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid white;
+    overflow: hidden;
+    background-color: white;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 120px 40px 40px;
+}
+
+.card-body h2 {
+    margin: 10px 0 5px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.card-body h4 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #888;
+    font-size: 18px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+button {
+    padding: 12px 28px;
+    background-color: f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+@media (max-width: 480px) {
+    .card-body {
+        padding: 100px 20px 30px;
+    }
+
+    .card-body h2 {
+        font-size: 24px;
+    }
+
+    .card-body h4,
+    .subtitle,
+    .bio,
+    button {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        top: 80px;
+    }
+
+    .card-header {
+        height: 140px;
+    }
+}

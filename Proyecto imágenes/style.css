@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(167, 100, 245);
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.fila-rosa {
+    background-color: rgb(247, 96, 201);
+}
+
+.fila-celeste {
+    background-color: skyblue;
+}
+
+.fila-coral {
+    background-color: lightcoral;
+}
+
+.fila-morada {
+    background-color: rgb(167, 100, 245);
+    padding: 49px;
+    margin-top: auto;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
